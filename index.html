@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pet Shop Do Fofinho em Campo Grande MS. Entre em contato e conheça nosso atendimento!">
+  <title>Pet Shop Do Fofinho | Campo Grande MS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #35483c;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+    }
+
+    .logo { font-size: 23px; font-weight: bold; color: #426b50; }
+
+    nav a {
+      text-decoration: none;
+      color: #35483c;
+      margin-left: 24px;
+    }
+
+    .hero {
+      min-height: 490px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      background: #e9f0e5;
+    }
+
+    .hero-content { max-width: 650px; }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .hero p { font-size: 19px; margin-bottom: 30px; }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #426b50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section { padding: 75px 8%; }
+
+    h2 { font-size: 34px; margin-bottom: 18px; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .service {
+      background: white;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px #35483c0d;
+    }
+
+    .service h3 { margin-bottom: 10px; color: #426b50; }
+
+    .contact { background: #e9f0e5; }
+
+    .contact p { margin: 10px 0; }
+
+    footer {
+      background: #35483c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 8px; font-size: 14px; }
+      .hero { padding: 70px 7%; }
+      section { padding: 55px 7%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🐾 Pet Shop Do Fofinho</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Seu pet merece todo esse carinho! 🐶</h1>
+        <p>
+          Bem-vindo ao Pet Shop Do Fofinho!
+          Estamos em Campo Grande, MS, prontos para receber
+          você e seu melhor amigo com muito carinho.
+        </p>
+        <a class="button"
+           href="https://wa.me/5567991028282"
+           target="_blank">
+          Fale conosco pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Cuidado e carinho para seu pet</h2>
+      <p>Conheça nosso estabelecimento e entre em contato para saber mais sobre nossos serviços.</p>
+
+      <div class="services">
+        <div class="service">
+          <h3>🐾 Pet Shop</h3>
+          <p>Um espaço dedicado ao cuidado e bem-estar do seu melhor amigo.</p>
+        </div>
+
+        <div class="service">
+          <h3>❤️ Atendimento</h3>
+          <p>Entre em contato com nossa equipe para conhecer as opções de atendimento.</p>
+        </div>
+
+        <div class="service">
+          <h3>🐕 Cuidado e carinho</h3>
+          <p>Seu companheiro merece atenção especial em todos os momentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <h2>Venha nos conhecer!</h2>
+      <p><strong>Endereço:</strong> Rua Padre Valentim, 350 - São Francisco, Campo Grande - MS</p>
+      <p><strong>Telefone:</strong> (67) 99102-8282</p>
+      <p><strong>Instagram:</strong>
+        <a href="https://instagram.com/petshopdofofinho" target="_blank">
+          @petshopdofofinho
+        </a>
+      </p>
+      <br>
+      <a class="button"
+         href="https://wa.me/5567991028282"
+         target="_blank">
+        Conversar pelo WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pet Shop Do Fofinho. Todos os direitos reservados.</p>
+    <p>Campo Grande - Mato Grosso do Sul</p>
+  </footer>
+
+</body>
+</html>
