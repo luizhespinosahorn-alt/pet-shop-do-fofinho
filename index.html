@@ -6,265 +6,28 @@
 <meta name="theme-color" content="#f5f1e8">
 <meta name="description" content="Pet Shop Do Fofinho — cuidado veterinário, banho e tosa e produtos para seu pet em Campo Grande, MS.">
 <title>Pet Shop Do Fofinho | Cuidado com carinho</title>
-<link rel="icon" type="image/png" href="logo-original.png">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
- --paper:#f7f4ec;--cream:#eee8da;--white:#fffdf8;--olive:#59664a;--deep:#354333;
- --sage:#dce1d2;--clay:#bd795e;--ink:#343a30;--muted:#77796e;--line:#e4dfd3;
- --serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;
- --shadow:0 12px 35px rgba(55,61,45,.08);--radius:18px
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
-img{display:block;max-width:100%;width:100%;object-fit:cover}
-a{color:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
-.topline{background:var(--deep);color:#f8f4e9;text-align:center;padding:8px 15px;font-size:.78rem;letter-spacing:.04em}
-header{position:sticky;top:0;z-index:20;background:rgba(247,244,236,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo-mark{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;background:transparent;border-radius:0}.logo-mark img{width:100%;height:100%;object-fit:contain}
-.logo strong{display:block;font-family:var(--serif);font-size:1.15rem;font-weight:600;line-height:1.2}
-.logo small{display:block;color:var(--muted);font-size:.67rem;letter-spacing:.13em;text-transform:uppercase;margin-top:4px}
-.navlinks{display:flex;align-items:center;gap:27px}
-.navlinks a{text-decoration:none;color:#555b4e;font-size:.9rem;font-weight:600}
-.navlinks a:hover,.navlinks a.active{color:var(--clay)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 21px;border-radius:7px;background:var(--olive);color:white;text-decoration:none;font-weight:700;font-size:.9rem;border:1px solid var(--olive);transition:.2s}
-.btn:hover{background:var(--deep);transform:translateY(-2px)}
-.btn.outline{background:transparent;color:var(--olive)}
-.btn.outline:hover{background:var(--sage)}
-.menu{display:none;border:0;background:none;font-size:1.7rem;color:var(--deep)}
-main{min-height:65vh}
-.hero{padding:66px 0 76px}
-.hero-grid{display:grid;grid-template-columns:1fr 1.03fr;align-items:center;gap:65px}
-.kicker{color:var(--clay);font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.16em}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.16}
-h1{font-size:clamp(2.8rem,5.3vw,4.8rem);margin:17px 0 20px;letter-spacing:-.035em}
-h2{font-size:clamp(2.1rem,4vw,3.25rem);margin:12px 0 17px;letter-spacing:-.025em}
-h3{font-size:1.45rem;margin:0 0 10px}
-p{color:var(--muted);margin:0 0 17px}
-.hero-copy>p{font-size:1.07rem;max-width:470px;line-height:1.85}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.hero-image{height:510px;position:relative}
-.hero-image img{height:100%;border-radius:48% 48% 9px 9px}
-.image-note{position:absolute;bottom:25px;left:-25px;background:var(--white);padding:15px 20px;box-shadow:var(--shadow);max-width:230px;border-left:3px solid var(--clay)}
-.image-note b{font-family:var(--serif);font-size:1.1rem;display:block}
-.image-note span{font-size:.8rem;color:var(--muted)}
-.trust{margin-top:28px;font-size:.86rem;color:var(--muted)}.stars{color:#b8874c;letter-spacing:2px}
-.intro{background:var(--sage);padding:23px 0}
-.intro-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.intro-item{display:flex;align-items:center;gap:12px;color:var(--deep);font-size:.9rem}
-.intro-item i{font-style:normal;font-size:1.3rem;color:var(--clay)}
-.section{padding:86px 0}
-.section-head{max-width:650px;margin-bottom:35px}
-.section-head p{max-width:560px}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.service{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:var(--radius);display:flex;flex-direction:column;min-height:290px}
-.service .symbol{font-size:1.7rem;margin-bottom:23px}
-.service p{font-size:.92rem;line-height:1.75}
-.service a{margin-top:auto;color:var(--olive);font-weight:700;text-decoration:none;font-size:.9rem}
-.service a:hover{color:var(--clay)}
-.story{background:#eeeade}
-.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.story-photo{height:440px}
-.story-photo img{height:100%;border-radius:9px 90px 9px 9px}
-.story-copy p{line-height:1.9}
-.pill-list{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0}
-.pill{background:var(--white);border:1px solid var(--line);padding:8px 13px;border-radius:30px;font-size:.82rem;color:var(--deep)}
-.photo-row{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}
-.photo-row img{height:250px;border-radius:8px}
-.contact{background:var(--deep);color:#fff;padding:70px 0}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.contact h2{color:#fff}.contact p{color:#d6d9ce}
-.contact-info{display:grid;gap:15px}
-.contact-info div{padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.17)}
-.contact-info b{display:block;color:#fff;font-size:.86rem}.contact-info span,.contact-info a{color:#d6d9ce;text-decoration:none;font-size:.9rem}
-footer{padding:28px 0;background:#293528;color:#e9e6dc}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer p{margin:0;color:#c3c8bb;font-size:.8rem}
-footer a{color:#f2eee2;text-decoration:none;font-size:.88rem}
-.float-wa{position:fixed;right:22px;bottom:22px;z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#238b58;color:white;text-decoration:none;font-size:25px;box-shadow:var(--shadow)}
-/* Internal pages */
-.page-hero{padding:64px 0 55px;background:var(--cream)}
-.breadcrumb{font-size:.82rem;color:var(--muted);margin-bottom:25px}
-.breadcrumb a{text-decoration:none;color:var(--olive)}
-.page-grid{display:grid;grid-template-columns:1fr .9fr;gap:55px;align-items:center}
-.page-photo{height:390px}.page-photo img{height:100%;border-radius:9px 85px 9px 9px}
-.page-content{padding:60px 0}
-.content-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px}
-.soft-panel{background:var(--sage);padding:30px;border-radius:9px}
-.soft-panel h3{font-size:1.35rem}
-.list{padding-left:20px;color:var(--muted)}.list li{margin:9px 0}
-.team-card{display:flex;gap:20px;align-items:center;background:var(--white);padding:20px;border:1px solid var(--line);border-radius:12px;margin-top:25px}
-.team-avatar{width:76px;height:76px;border-radius:50%;background:var(--sage);display:grid;place-items:center;font-size:1.8rem;flex:none}
-.team-card p{margin:4px 0 0;font-size:.88rem}
-.catalog-tools{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin:28px 0}
-.search{min-width:230px;max-width:340px;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;background:var(--white);font:inherit}
-.filters{display:flex;gap:8px;flex-wrap:wrap}
-.filter{border:1px solid var(--line);background:var(--white);padding:9px 14px;border-radius:30px;font:600 .82rem var(--sans);color:var(--olive);cursor:pointer}
-.filter.active{background:var(--olive);color:#fff;border-color:var(--olive)}
-.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.product{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.product-pic{height:175px;background:var(--sage);display:grid;place-items:center;font-size:3rem}
-.product-body{padding:18px}
-.product-body small{color:var(--clay);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.68rem}
-.product-body h3{font-size:1.15rem;margin:6px 0}
-.product-body p{font-size:.84rem;margin:0}
-.empty{grid-column:1/-1;padding:25px;background:var(--white);border-radius:9px;color:var(--muted)}
-.hidden{display:none!important}
-@media(max-width:850px){
- .hero-grid,.story-grid,.contact-grid,.page-grid,.content-grid{grid-template-columns:1fr;gap:32px}
- .hero{padding-top:48px}.hero-image{height:410px;margin:0 12px}
- .services{grid-template-columns:1fr 1fr}.story-photo{height:350px}
- .page-photo{height:320px}.product-grid{grid-template-columns:1fr 1fr}
- .navlinks{gap:15px}
-}
-@media(max-width:650px){
- .wrap{width:calc(100% - 34px)}.nav{min-height:70px}.menu{display:block}
- .navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);padding:18px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
- .navlinks.open{display:flex}.navlinks a{padding:5px 0}.nav>.btn{display:none}
- h1{font-size:clamp(2.7rem,13vw,4rem)}
- .hero-image{height:340px}.image-note{left:-8px;bottom:15px}
- .intro-inner{display:grid;grid-template-columns:1fr 1fr}.intro-item{font-size:.8rem}
- .section{padding:65px 0}.services,.product-grid{grid-template-columns:1fr}
- .service{min-height:230px;padding:24px}.story-photo{height:290px}
- .photo-row{grid-template-columns:1fr 1fr}.photo-row img{height:155px}.photo-row img:first-child{grid-column:1/-1;height:210px}
- .contact{padding:58px 0}.page-hero{padding:42px 0}.page-photo{height:260px}
- .catalog-tools{align-items:stretch}.search{max-width:none}
- .footer-inner{align-items:flex-start;flex-direction:column}
-}
-
-/* Página exclusiva de contato */
-.contact-page-hero{background:var(--cream);padding:76px 0 70px}
-.contact-page-hero h1{max-width:740px}
-.contact-page-hero p{max-width:620px;font-size:1.08rem}
-.contact-page-body{padding:78px 0 90px}
-.contact-page-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:54px;align-items:start}
-.contact-page-body h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;margin:0 0 18px;color:var(--deep)}
-.contact-page-details{display:grid;gap:23px;margin-top:34px}
-.contact-page-details article{border-bottom:1px solid var(--line);padding-bottom:20px}
-.contact-page-details b{display:block;color:var(--deep);margin-bottom:6px}
-.contact-page-details p{margin:0;line-height:1.65}
-.contact-page-details a{color:var(--olive);text-decoration:underline;text-underline-offset:3px}
-.contact-form{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:34px;box-shadow:0 15px 40px rgba(53,67,51,.05)}
-.contact-form>p{margin-top:0}
-.contact-form label{display:block;font-size:.87rem;font-weight:700;color:var(--deep);margin:18px 0 7px}
-.contact-form input,.contact-form select,.contact-form textarea{display:block;width:100%;box-sizing:border-box;border:1px solid #d8d9cf;border-radius:10px;padding:13px 14px;background:#fff;color:var(--ink);font:inherit;outline-offset:2px}
-.contact-form textarea{min-height:130px;resize:vertical}
-.contact-form .btn{width:100%;margin-top:22px;cursor:pointer;text-align:center}
-.contact-form small{display:block;margin-top:13px;color:var(--muted);line-height:1.5}
-.contact-map{background:var(--cream);padding:68px 0 80px}
-.contact-map-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
-.contact-map iframe{width:100%;height:340px;border:0;border-radius:16px;display:block}
-@media(max-width:780px){.contact-page-layout,.contact-map-grid{grid-template-columns:1fr;gap:36px}.contact-page-hero{padding:54px 0}.contact-page-body{padding:55px 0}.contact-form{padding:23px}.contact-map{padding:52px 0}.contact-map iframe{height:290px}}
-
-/* Contato: espaço preparado para a futura foto real da Pati e da Luara */
-.contact-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:64px;align-items:center}
-.contact-team-placeholder{position:relative;min-height:335px;border-radius:24px;overflow:hidden;background:linear-gradient(145deg,#dce1d2,#e9dfcf);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center;border:1px solid rgba(53,67,51,.09)}
-.contact-team-placeholder:before,.contact-team-placeholder:after{content:'';position:absolute;border:1px solid rgba(89,102,74,.15);border-radius:50%;width:310px;height:310px;right:-105px;top:-130px}
-.contact-team-placeholder:after{width:220px;height:220px;left:-105px;right:auto;top:auto;bottom:-120px}
-.team-illustration{display:flex;align-items:end;justify-content:center;gap:18px;margin-bottom:25px;position:relative}
-.team-person{width:100px;height:145px;position:relative;display:flex;align-items:flex-end;justify-content:center}
-.team-person .head{position:absolute;top:8px;width:64px;height:72px;border-radius:46% 46% 45% 45%;background:#c49a7e;z-index:2;border:8px solid #554b40}
-.team-person.second .head{background:#d3a88b;border-color:#6c5847}
-.team-person .body{height:85px;width:100px;border-radius:48px 48px 8px 8px;background:#59664a}
-.team-person.second .body{background:#bd795e}
-.contact-team-placeholder strong{font-family:'Playfair Display',serif;color:var(--deep);font-size:1.4rem;position:relative}
-.contact-team-placeholder small{display:block;color:#67705e;font-size:.83rem;margin-top:8px;max-width:270px;line-height:1.5;position:relative}
-@media(max-width:900px){.contact-hero-grid{gap:30px;grid-template-columns:1fr 1fr}.contact-team-placeholder{min-height:285px}}
-@media(max-width:700px){.contact-hero-grid{grid-template-columns:1fr}.contact-team-placeholder{min-height:270px}.contact-page-hero{padding-bottom:42px}}
-
-/* Fotografia provisória da equipe na página de contato */
-.contact-team-photo{width:100%;height:350px;border-radius:24px;overflow:hidden;background:#dce1d2;box-shadow:0 12px 30px rgba(53,67,51,.08)}
-.contact-team-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
-@media(max-width:900px){.contact-team-photo{height:310px}}
-@media(max-width:700px){.contact-team-photo{height:300px}}
-
-/* Fotografias e apresentação da Dra. Luara */
-.hero-image img{object-position:50% 38%}.story-photo img{object-position:50% 26%}
-.photo-row img:nth-child(1){object-position:50% 24%}.photo-row img:nth-child(2){object-position:50% 18%}.photo-row img:nth-child(3){object-position:50% 35%}
-.page-photo img{object-position:50% 30%}.team-card img.team-avatar{width:100px;height:100px;object-fit:cover;object-position:center 28%;border-radius:12px}
-.gallery-pair{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}.gallery-pair img{height:270px;border-radius:10px}
-.contact-team-photo img{object-position:50% 30%}
-@media(max-width:650px){.gallery-pair img{height:190px}}
-
-/* Cartão abaixo da foto e galeria com foco nos animais, sem recortes. */
-.hero-image{height:auto}
-.hero-image>img{height:510px}
-.hero-image .image-note{position:static;max-width:none;margin-top:16px;box-shadow:none}
-.photo-row{align-items:center}
-.photo-row img{height:250px;object-fit:contain;object-position:center}
-@media(max-width:850px){.hero-image>img{height:410px}}
-@media(max-width:650px){.hero-image>img{height:340px}.photo-row img{height:155px}.photo-row img:first-child{height:210px}}
-</style>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div class="topline">Um lugar de cuidado, carinho e boas histórias em Campo Grande · MS</div>
 <header>
  <div class="wrap nav">
-  <a class="logo" href="#inicio" aria-label="Pet Shop Do Fofinho - início"><span class="logo-mark"><img src="logo-original.png" alt="Logo original Pet Shop Do Fofinho"></span><span><strong>Pet Shop Do Fofinho</strong><small>carinho em cada cuidado</small></span></a>
+  <a class="logo" href="#inicio" aria-label="Pet Shop Do Fofinho - início"><span class="logo-mark"><img src="assets/images/logo.png" alt="Logo original Pet Shop Do Fofinho"></span><span><strong>Pet Shop Do Fofinho</strong><small>carinho em cada cuidado</small></span></a>
   <button class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
   <nav class="navlinks" aria-label="Menu principal">
    <a href="#inicio" data-nav="inicio">Início</a><a href="#veterinario" data-nav="veterinario">Veterinário</a><a href="#banho-tosa" data-nav="banho-tosa">Banho e tosa</a><a href="#loja" data-nav="loja">Nossa loja</a><a href="#contato" data-nav="contato">Contato</a>
   </nav>
-  <a class="btn" href="https://wa.me/5567991028282" target="_blank" rel="noopener">Fale com a gente ↗</a>
+  <a class="btn" data-page-whatsapp href="https://wa.me/5567991028282?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Pet%20Shop%20do%20Fofinho%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20para%20o%20meu%20pet." target="_blank" rel="noopener">Fale com a gente ↗</a>
  </div>
 </header>
 <main id="app"></main>
-<footer><div class="wrap footer-inner"><a class="logo" href="#inicio"><span class="logo-mark"><img src="logo-original.png" alt="Logo original Pet Shop Do Fofinho"></span><span><strong>Pet Shop Do Fofinho</strong><small>carinho em cada cuidado</small></span></a><p>© <span id="year"></span> Pet Shop Do Fofinho · Campo Grande, MS</p><a href="https://instagram.com/petshopdofofinho" target="_blank" rel="noopener">@petshopdofofinho ↗</a></div></footer>
-<a class="float-wa" href="https://wa.me/5567991028282" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
-<script>
-const WA='https://wa.me/5567991028282';
-const IMG={vet:'luara-atendimento.webp',portrait:'luara-retrato.webp',pet:'luara-com-pet.webp',dalmata:'luara-com-dalmata.webp'};
-const photos={
- hero:'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1300&q=85',
- vet:'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1200&q=85',
- grooming:'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=85',
- store:'https://images.unsplash.com/photo-1589924691995-400dc9old?auto=format&fit=crop&w=1200&q=85',
- about:'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1100&q=85'
-};
-function home(){return `<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><span class="kicker">Pet shop · Campo Grande, MS</span><h1>Cuidado de verdade,<br>com carinho de sobra.</h1><p>Seu pet faz parte da família. Aqui, cada visita é uma oportunidade de cuidar, acolher e deixar o dia dele um pouquinho melhor.</p><div class="actions"><a class="btn" href="${WA}" target="_blank" rel="noopener noreferrer">Converse com a nossa equipe ↗</a><a class="btn outline" href="#servicos">Conheça nossos serviços</a></div></div><div class="hero-image"><img src="${IMG.vet}" alt="Dra. Luara cuidando de um cachorro" fetchpriority="high"><div class="image-note"><b>Todo pet merece cuidado de perto.</b><span>Com atenção, respeito e carinho.</span></div></div></div></section><div class="intro"><div class="wrap intro-inner"><div class="intro-item"><span>♡</span> Atendimento próximo e atencioso</div><div class="intro-item"><span>✿</span> Respeito ao jeitinho de cada pet</div><div class="intro-item"><span>⌖</span> São Francisco · Campo Grande</div></div></div><section class="section" id="servicos"><div class="wrap"><div class="section-head"><span class="kicker">Como podemos ajudar?</span><h2>Um cuidado especial para cada necessidade.</h2><p>Da saúde à higiene, passando por tudo aquilo que faz parte da rotina do seu companheiro.</p></div><div class="services"><article class="service"><div class="symbol">🩺</div><h3>Atendimento veterinário</h3><p>Atenção profissional e orientação cuidadosa para a saúde e o bem-estar do seu pet.</p><a href="#veterinario">Conheça o atendimento →</a></article><article class="service"><div class="symbol">🫧</div><h3>Banho e tosa</h3><p>Um momento de higiene e cuidado, respeitando o conforto de cada animal.</p><a href="#banho-tosa">Conheça banho e tosa →</a></article><article class="service"><div class="symbol">🦴</div><h3>Produtos para pets</h3><p>Uma loja com itens que acompanham o dia a dia do seu melhor amigo.</p><a href="#loja">Explore nossa loja →</a></article></div></div></section><section class="section story"><div class="wrap story-grid"><div class="story-photo"><img src="${photos.about}" alt="Cachorro em um momento de carinho" loading="lazy"></div><div><span class="kicker">Nosso jeito de cuidar</span><h2>Mais do que atender pets. É cuidar de quem faz parte da família.</h2><p>Acreditamos que cada animal tem seu próprio jeitinho. Por isso, acolhimento, atenção e respeito fazem parte de cada experiência no Pet Shop do Fofinho.</p><p>Queremos que você se sinta à vontade para conversar com nossa equipe e encontrar o cuidado certo para seu companheiro.</p><div class="pill-list"><span class="pill">Carinho em cada atendimento</span><span class="pill">Cuidado com respeito</span><span class="pill">Tudo pertinho de você</span></div><a class="btn" href="#contato">Venha nos conhecer</a></div></div></section><section class="section"><div class="wrap"><div class="section-head"><span class="kicker">Um pouquinho do nosso universo</span><h2>Os melhores momentos têm patas.</h2></div><div class="photo-row"><img src="${photos.hero}" alt="Dois cachorros juntos ao ar livre" loading="lazy"><img src="${photos.grooming}" alt="Cachorro durante os cuidados de higiene" loading="lazy"><img src="${photos.about}" alt="Cachorro em um momento de carinho" loading="lazy"></div></div></section>${contactSection()}`}
-function contactSection(){return `<section class="contact" id="contato"><div class="wrap contact-grid"><div><span class="kicker" style="color:#d8b29d">Estamos pertinho</span><h2>Vai ser um prazer receber vocês.</h2><p>Fale com a nossa equipe pelo WhatsApp ou venha nos visitar. Estamos no bairro São Francisco, em Campo Grande.</p><a class="btn" style="background:#f7f4ec;color:#354333;border-color:#f7f4ec" href="${WA}" target="_blank">Chamar no WhatsApp ↗</a></div><div class="contact-info"><div><b>Endereço</b><span>Rua Padre Valentim, 350 · São Francisco<br>Campo Grande, MS · 79009-290</span></div><div><b>Telefone / WhatsApp</b><a href="tel:+5567991028282">(67) 99102-8282</a></div><div><b>Instagram</b><a href="https://instagram.com/petshopdofofinho" target="_blank">@petshopdofofinho ↗</a></div><div><b>Como chegar</b><a href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Valentim+350+Sao+Francisco+Campo+Grande+MS" target="_blank">Abrir no Google Maps ↗</a></div></div></div></section>`}
-function veterinary(){return `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="#inicio">Início</a> / Atendimento veterinário</div><div class="page-grid"><div><span class="kicker">Saúde e bem-estar</span><h1>Atendimento veterinário</h1><p style="font-size:1.08rem">Cuidado profissional com atenção ao que seu pet precisa.</p><div class="actions"><a class="btn" href="${WA}?text=${encodeURIComponent('Olá! Gostaria de saber mais sobre o atendimento veterinário.') }" target="_blank" rel="noopener noreferrer">Consultar atendimento ↗</a></div></div><div class="page-photo"><img src="${IMG.vet}" alt="Dra. Luara com um cachorro durante um atendimento — imagem tratada digitalmente"></div></div></div></section><section class="page-content"><div class="wrap content-grid"><div><span class="kicker">Conheça quem cuida</span><h2>Carinho e atenção fazem a diferença.</h2><p>A saúde do seu companheiro merece atenção, escuta e cuidado. Entre em contato para consultar os atendimentos disponíveis e saber como funciona o agendamento.</p><div class="team-card"><img class="team-avatar" src="${IMG.portrait}" alt="Retrato da Dra. Luara"><div><h3>Dra. Luara</h3><p>Atendimento veterinário</p><p>Mais informações profissionais serão adicionadas posteriormente.</p></div></div><div class="gallery-pair"><img src="${IMG.pet}" alt="Dra. Luara com um cachorro" loading="lazy"><img src="${IMG.dalmata}" alt="Momento de cuidado com um dálmata" loading="lazy"></div></div><aside class="soft-panel"><h3>Quer saber mais?</h3><p>Fale com a equipe para consultar atendimentos, horários e como agendar.</p><a class="btn" href="${WA}" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></aside></div></section>${contactSection()}`}
-const pages={
- veterinario:{title:'Atendimento veterinário',kicker:'Saúde e bem-estar',lead:'Cuidado profissional com atenção ao que seu pet precisa.',img:photos.vet,alt:'Atendimento veterinário a um animal',body:'A saúde do seu companheiro merece atenção, escuta e cuidado. No Pet Shop Do Fofinho, você pode conversar com nossa equipe sobre o atendimento veterinário e encontrar a melhor orientação para o seu pet.',panel:'Quer saber mais?',panelText:'Entre em contato para consultar os atendimentos disponíveis, horários e como funciona o agendamento.',cta:'Consultar atendimento'},
- 'banho-tosa':{title:'Banho e tosa',kicker:'Higiene com carinho',lead:'Um momento de cuidado, conforto e bem-estar para o seu pet.',img:photos.grooming,alt:'Cão recebendo cuidados de higiene',body:'O banho e a tosa fazem parte da rotina de saúde e bem-estar dos nossos companheiros. Cada pet tem seu próprio temperamento e suas necessidades — por isso, o cuidado começa com atenção e respeito.',panel:'Um cuidado feito por pessoas',panelText:'Nossa equipe conta com uma profissional dedicada à parte de banho e tosa. Fale conosco para conhecer os serviços, consultar horários e combinar os cuidados ideais.',cta:'Agendar banho e tosa'},
- loja:{title:'Nossa loja',kicker:'Para a rotina do seu pet',lead:'Produtos e carinho para acompanhar cada fase da vida.',img:photos.about,alt:'Cachorro em ambiente acolhedor',body:'A loja do Pet Shop Do Fofinho reúne produtos para fazer parte da rotina do seu melhor amigo. Estamos preparando este espaço para apresentar nosso catálogo com fotos, categorias e informações de cada item.',panel:'Está procurando um produto?',panelText:'Chame nossa equipe pelo WhatsApp. Podemos ajudar a consultar disponibilidade e tirar suas dúvidas.',cta:'Consultar produtos'}
-};
-function detail(key){let p=pages[key];return `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="#inicio">Início</a> / ${p.title}</div><div class="page-grid"><div><span class="kicker">${p.kicker}</span><h1>${p.title}</h1><p style="font-size:1.08rem;max-width:500px">${p.lead}</p><div class="actions"><a class="btn" href="${WA}?text=${encodeURIComponent('Olá! Gostaria de saber mais sobre '+p.title.toLowerCase()+'.')}" target="_blank">${p.cta} ↗</a><a class="btn outline" href="#inicio">Voltar ao início</a></div></div><div class="page-photo"><img src="${p.img}" alt="${p.alt}"></div></div></div></section>
- <section class="page-content"><div class="wrap content-grid"><div><h2>${key==='veterinario'?'Cuidado que começa pela atenção.':key==='banho-tosa'?'Cada pet tem seu próprio jeitinho.':'Um cantinho para descobrir novidades.'}</h2><p>${p.body}</p>${key==='veterinario'?'<div class="team-card"><div class="team-avatar">🩺</div><div><h3>Dra. Luara</h3><p>Atendimento veterinário</p><p>Em breve: apresentação, especialidades e informações profissionais.</p></div></div>':key==='banho-tosa'?'<div class="team-card"><div class="team-avatar">🐶</div><div><h3>Nossa profissional de banho e tosa</h3><p>Um espaço para conhecer quem cuida do visual e da higiene do seu pet.</p></div></div>':''}</div><aside class="soft-panel"><h3>${p.panel}</h3><p>${p.panelText}</p><a class="btn" href="${WA}" target="_blank">Falar pelo WhatsApp ↗</a></aside></div></section>${contactSection()}`}
-const products=[
- {name:'Rações e alimentação',cat:'Alimentação',icon:'🥣',desc:'Alimentos para a rotina do seu pet.'},
- {name:'Petiscos e agrados',cat:'Alimentação',icon:'🦴',desc:'Pequenos agrados para momentos especiais.'},
- {name:'Higiene e cuidados',cat:'Higiene',icon:'🧴',desc:'Itens para os cuidados do dia a dia.'},
- {name:'Acessórios',cat:'Acessórios',icon:'🎀',desc:'Acessórios para conforto e diversão.'},
- {name:'Brinquedos',cat:'Acessórios',icon:'🧸',desc:'Opções para brincar e gastar energia.'},
- {name:'Outros produtos',cat:'Outros',icon:'🐾',desc:'Consulte nossa equipe sobre disponibilidade.'}
-];
-function catalog(){return `<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="#inicio">Início</a> / Nossa loja</div><span class="kicker">Nossa loja</span><h1>Coisinhas boas para<br>quem a gente ama.</h1><p style="max-width:580px">Estamos organizando nosso catálogo. Enquanto isso, explore as categorias e fale com a equipe para consultar os produtos disponíveis.</p></div></section><section class="page-content"><div class="wrap"><div class="catalog-tools"><input class="search" id="productSearch" type="search" placeholder="Buscar no catálogo..." aria-label="Buscar no catálogo"><div class="filters"><button class="filter active" data-filter="Todos">Todos</button><button class="filter" data-filter="Alimentação">Alimentação</button><button class="filter" data-filter="Higiene">Higiene</button><button class="filter" data-filter="Acessórios">Acessórios</button><button class="filter" data-filter="Outros">Outros</button></div></div><div class="product-grid" id="productGrid">${products.map(p=>`<article class="product" data-cat="${p.cat}" data-name="${p.name.toLowerCase()}"><div class="product-pic">${p.icon}</div><div class="product-body"><small>${p.cat}</small><h3>${p.name}</h3><p>${p.desc}</p></div></article>`).join('')}</div><p style="margin-top:25px;font-size:.86rem">Os cartões acima representam categorias iniciais, não produtos ou marcas confirmados. Vamos substituir por fotos e itens reais da loja.</p></div></section>${contactSection()}`}
-
-function contactPage(){return `<section class="contact-page-hero"><div class="wrap"><div class="breadcrumb"><a href="#inicio">Início</a> / Contato</div><div class="contact-hero-grid"><div><span class="kicker">Estamos pertinho de você</span><h1>Vamos conversar?</h1><p>Estamos aqui para ajudar você a cuidar de quem faz parte da família. Tire suas dúvidas, consulte horários ou fale com a nossa equipe.</p></div><div class="contact-team-photo"><img src="luara-com-pet.webp" alt="Dra. Luara com um cachorro" loading="eager"></div></div></div></section>
-<section class="contact-page-body"><div class="wrap contact-page-layout"><div><span class="kicker">Fale com a gente</span><h2>Vai ser um prazer receber vocês.</h2><p>Escolha o jeito mais fácil de entrar em contato. Estamos no bairro São Francisco, em Campo Grande.</p><div class="contact-page-details">
-<article><b>WhatsApp e telefone</b><p><a href="https://wa.me/5567991028282" target="_blank" rel="noopener noreferrer">(67) 99102-8282 ↗</a></p></article>
-<article><b>Endereço</b><p>Rua Padre Valentim, 350 · São Francisco<br>Campo Grande, MS · CEP 79009-290</p></article>
-<article><b>Horário de atendimento</b><p>Consulte os horários atualizados com a nossa equipe pelo WhatsApp.</p></article>
-<article><b>Instagram</b><p><a href="https://www.instagram.com/petshopdofofinho/" target="_blank" rel="noopener noreferrer">@petshopdofofinho ↗</a></p></article>
-</div></div><form class="contact-form" id="contactForm"><span class="kicker">Mande uma mensagem</span><h2>Como podemos ajudar?</h2><p>Preencha os campos e vamos preparar sua mensagem para enviar pelo WhatsApp.</p>
-<label for="contactName">Seu nome</label><input id="contactName" name="name" required autocomplete="name" placeholder="Como podemos chamar você?">
-<label for="contactPhone">Seu telefone</label><input id="contactPhone" name="phone" type="tel" required autocomplete="tel" placeholder="(67) 99999-9999">
-<label for="contactSubject">Sobre o que você quer falar?</label><select id="contactSubject" name="subject" required><option value="" disabled selected>Selecione um assunto</option><option>Atendimento veterinário</option><option>Banho e tosa</option><option>Produtos da loja</option><option>Outras dúvidas</option></select>
-<label for="contactMessage">Sua mensagem</label><textarea id="contactMessage" name="message" required placeholder="Conte para a gente como podemos ajudar..."></textarea>
-<button type="submit" class="btn">Enviar pelo WhatsApp ↗</button><small>Ao clicar, o WhatsApp abrirá com a mensagem preenchida. Você poderá revisar antes de enviar.</small></form></div></section>
-<section class="contact-map"><div class="wrap contact-map-grid"><div><span class="kicker">Venha nos visitar</span><h2>Um cantinho de carinho em Campo Grande.</h2><p>Rua Padre Valentim, 350 · São Francisco, Campo Grande – MS.</p><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Valentim+350+Sao+Francisco+Campo+Grande+MS" target="_blank" rel="noopener noreferrer">Ver rota no Google Maps ↗</a></div><iframe title="Mapa do Pet Shop Do Fofinho" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua%20Padre%20Valentim%20350%20S%C3%A3o%20Francisco%20Campo%20Grande%20MS&output=embed"></iframe></div></section>`}
-function setupContactForm(){const form=document.getElementById('contactForm');if(!form)return;form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;const name=form.elements.name.value.trim();const phone=form.elements.phone.value.trim();const subject=form.elements.subject.value;const message=form.elements.message.value.trim();const text=`Olá! Meu nome é ${name}.\nTelefone: ${phone}\nAssunto: ${subject}\n\n${message}`;window.open(WA+'?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');});}
-
-function render(){let key=location.hash.replace('#','')||'inicio';let app=document.getElementById('app');if(key==='inicio'||key==='servicos')app.innerHTML=home();else if(key==='contato')app.innerHTML=contactPage();else if(key==='loja')app.innerHTML=catalog();else if(key==='veterinario')app.innerHTML=veterinary();else if(pages[key])app.innerHTML=detail(key);else app.innerHTML=home();document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===key));document.querySelector('.navlinks').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false');document.querySelector('.menu').textContent='☰';window.scrollTo(0,0);setupCatalog();setupContactForm();if(key==='servicos')document.getElementById('servicos')?.scrollIntoView();}
-function setupCatalog(){const search=document.getElementById('productSearch');if(!search)return;let filter='Todos';const update=()=>{let q=search.value.toLowerCase();let visible=0;document.querySelectorAll('.product').forEach(card=>{let ok=(filter==='Todos'||card.dataset.cat===filter)&&card.dataset.name.includes(q);card.classList.toggle('hidden',!ok);if(ok)visible++;});let old=document.querySelector('.empty');if(old)old.remove();if(!visible)document.getElementById('productGrid').insertAdjacentHTML('beforeend','<div class="empty">Não encontramos essa categoria ou termo. Fale com a nossa equipe para consultar outros produtos.</div>');};search.addEventListener('input',update);document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));update();}));}
-document.querySelector('.menu').addEventListener('click',()=>{let n=document.querySelector('.navlinks');let open=n.classList.toggle('open');document.querySelector('.menu').setAttribute('aria-expanded',String(open));document.querySelector('.menu').textContent=open?'×':'☰';});
-window.addEventListener('hashchange',render);document.getElementById('year').textContent=new Date().getFullYear();render();
-</script>
+<footer><div class="wrap footer-inner"><a class="logo" href="#inicio"><span class="logo-mark"><img src="assets/images/logo.png" alt="Logo original Pet Shop Do Fofinho"></span><span><strong>Pet Shop Do Fofinho</strong><small>carinho em cada cuidado</small></span></a><p>© <span id="year"></span> Pet Shop Do Fofinho · Campo Grande, MS</p><a href="https://instagram.com/petshopdofofinho" target="_blank" rel="noopener">@petshopdofofinho ↗</a></div></footer>
+<a class="float-wa" data-page-whatsapp href="https://wa.me/5567991028282?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Pet%20Shop%20do%20Fofinho%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20para%20o%20meu%20pet." target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+<script src="assets/js/site.js"></script>
 </body></html>
 
 
